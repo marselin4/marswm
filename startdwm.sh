@@ -2,10 +2,11 @@
 
 export XDG_SESSION_TYPE=x11
 
+setxkbmap es &
+mini-polkit "echo '{{MESSAGE}}' | dmenu -p 'Password:'" &
 nitrogen --restore &
 picom &
-dunst &
+wired &
 slstatus &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 exec dwm
